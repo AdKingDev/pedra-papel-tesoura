@@ -16,7 +16,7 @@ const regras = {
 const jogadasEmoji = {
     pedra: '👊🏽',
     papel: '🖐🏽',
-    tesoura: '✌🏽'
+    tesoura: '✌🏽',
 }
 
 let pontosJogador = 0;
