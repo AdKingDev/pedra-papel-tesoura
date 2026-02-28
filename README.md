@@ -10,6 +10,9 @@ Funcionalidades:
 - Interface simples e intuitiva
 - Feedback visual de vitória, derrota ou empate
 
+MAIOR DESAFIO:
+O meu maior desafio nesse projeto foi durante a interação do JavaScript, sendo mais preciso durante a criação do botão para tornar o jogo mais acessivel, deixando ele com a opção de alternar entre o tema Claro e o tema Escuro.
+
 Link do projeto: https://pedra-papel-tesoura-gamma-navy.vercel.app/
 
 Desenvolvido por Adriano Júnio. Em transição para Desenvolvimento Web.
