@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedra, Papel e Tesoura</title>
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="shortcut icon" href="./assets/images/favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <button class="tema" aria-label="Alterar tema">🌞</button>
+    <div class="container flex-center flex-column">
+        <header>
+            <h1>Jogo de Pedra, Papel e Tesoura</h1>
+        </header>
+
+        <main>
+            <div class="movimento flex-center flex-column">
+                <span>Escolha sua jogada:</span>
+                <div class="escolhas flex-center">
+                    <button style="--background: #e00000; --hover: #c00000" onclick="jogar('pedra')">👊🏽</button>
+                    <button style="--background: #2196F3; --hover: #0d47a1" onclick="jogar('papel')">🖐🏽</button>
+                    <button style="--background: #00FF40; --hover: #00992c" onclick="jogar('tesoura')">✌🏽</button>
+                </div>
+            </div>
+
+            
+            <div class="resultadoContainer">
+                <span class="resultado"></span>
+                <div class="resultadoTexto flex-center">
+                    <div>
+                        <p>Jogador</p>
+                        <span id="jogadaJogador">?</span>
+                    </div>
+
+                    <div>
+                        <p>CPU</p>
+                        <span id="jogadaComputador">?</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="placar flex-center flex-column">
+                <h2>PLACAR:</h2>
+                <div class="pontos">
+                    <p>Player: <span id="jogador">0</span></p>
+                    <p>CPU: <span id="computador">0</span></p>
+                </div>
+            </div>
+        </main>
+        <footer><p>Desenvolvido por <a href="https://www.linkedin.com/in/adrianojuniorodrigues/" target="_blank">@adking.dev</a></p></footer>
+    </div>
+</body>
+
+<script src="./assets/javascript/script.js"></script>
+</html>

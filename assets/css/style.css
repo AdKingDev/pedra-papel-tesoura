@@ -1,0 +1,230 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+:root {
+    --background: #ffffff;
+    --texto: #000000;
+}
+
+.dark-mode {
+    --background: #18181B;
+    --texto: #FFFFFF
+}
+
+/* Classe para centralizar elementos */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Classe para organizar em colunas */
+.flex-column {
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background);
+    color: var(--texto);
+    transition: 0.3s;
+    min-height: 100vh;
+    overflow-x: hidden
+}
+
+.tema {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+    background-color: #333333;
+    border: 1px solid #272727;
+
+    color: #f5f4c6;
+    font-size: 20px;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    cursor: pointer;
+    box-shadow: 1px 1px 0 #000;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+
+.tema:hover {
+    background-color: #252525;
+}
+
+.tema:active {
+    transform: translateY(3px);
+    box-shadow: 1px 1px 0 #000;;
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 600px;
+    min-height: 450px;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    align-items: center;
+}
+
+header, .placar {
+    display: flex;
+    justify-content: center;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 10px;
+    
+}
+
+header > h1 {
+    color: var(--texto);
+    -webkit-text-stroke: 2px #000;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Conteúdo principal */
+main {
+    width: 100%;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+/* Container dos movimentos */
+.movimento {
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Escolhas/botões */
+.escolhas {
+    gap: 20px;
+}
+
+.escolhas > button {
+    font-size: 50px;
+    background: var(--background);
+    border-radius: 15px;
+
+    width: 100px;
+    height: 100px;
+
+    cursor: pointer;
+
+    border: none;
+    box-shadow: 2px 2px 0 #000;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+
+.escolhas > button:hover {
+    background: var(--hover);
+    border: 2px solid #000;
+}
+
+.escolhas > button:active {
+    transform: translateY(4px);
+    box-shadow: 1px 1px 0 #000;;
+}
+
+.movimento > span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Espaço para o resultado */
+.resultadoContainer {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 30px;
+    padding-bottom: 20px;
+
+    display: none;
+}
+
+/* Escolhas dos jogadores [texto] */
+.resultadoTexto > div:first-child {
+    padding-right: 20px;
+}
+
+.resultadoTexto > div > p {
+    font-size: 40px;
+}
+
+/* Pontuação do Jogador x CPU */
+.placar {
+    display: flex;
+    justify-content: center;
+}
+
+/* Pontuação */
+.pontos {
+    display: flex;
+    gap: 40px;
+    font-size: 30px;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Cores de vitoria, derrota e empate */
+.vitoria {
+    color: #00ff88;
+}
+
+.derrota {
+    color: #ff4d4d;
+}
+
+.empate {
+    color: #f8c701;
+}
+
+/* Créditos */
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    padding: 10px;
+}
+
+footer > p > a {
+    color: var(--texto);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    color: #f8c701;
+}
